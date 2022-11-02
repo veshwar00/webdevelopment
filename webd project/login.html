@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body 
+{   
+    font-size: 13px;
+    font-family: Arial;
+}
+form 
+{
+  margin: auto;
+  width: 30%;
+  padding: 30px;
+  border: none;
+  border-radius:15px;
+  
+  box-shadow: 3px 4px 5px #888888;
+  margin-top: 50px;
+}
+
+input[type=text], input[type=password] {
+  width: 40%;
+  padding: 12px 20px;
+  border-radius: 9px;
+  display: inline-block;
+  border: 1px solid grey;
+
+  
+}
+
+button {
+  background-color: green;
+  color: whitesmoke;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border-radius: 20px;
+  border:none;
+  cursor: pointer;
+  width: 27%;
+  
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.container {
+   
+    border-top: 60px;
+  padding: 2px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+ 
+}
+</style>
+</head>
+<body>
+
+
+<form  method="post" align="center">
+
+  <div class="container">
+    <h1 style="font-family: Aharoni color: ">SELF_MADE</h1>
+    <h2>User Login </h2>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+    <br>
+    <br>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+    <br>  
+    <label>
+        <input type="checkbox" checked="checked" name="remember" "> Remember me
+      </label>
+      <br><br>  
+    <button type="submit">Sign in</button>
+    <br><br>
+   <hr style="color: #888888;" width="30%">
+   <br> <button type="submit" style="background-color: #3B5998;">Sign up <a href="form.html"></a></button>
+</div>
+ 
+</form>
+
+</body>
+</html>
